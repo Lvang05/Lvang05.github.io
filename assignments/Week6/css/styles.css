@@ -1,0 +1,66 @@
+/* Body font family and color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+    font-style: italic;
+    letter-spacing: 0.4em;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    letter-spacing: 0.4em;
+}
+
+/* ID */
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    padding: auto;
+    background-color: lightcyan;
+    padding: 20px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.float {
+    float: left;
+    margin-right: 10px;
+}
+
+.column {
+    float: left;
+}
+
+/* Breaks the float */
+.break {
+    clear: both;
+}
+
+header nav a {
+    text-decoration: none;
+    color: red;
+    padding: 15px;
+    line-height: 1.6;
+}
+
+/* Hovering over the nav changes color and underlines */
+header nav a:hover {
+    color: cyan;
+    text-decoration: underline;
+
+}
+
+header {
+    font-style: italic;
+}

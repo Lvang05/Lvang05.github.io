@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: gray;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 6em;
+    font-family: "Griffy", system-ui;
+    font-weight: 400;
+}
+
+
+/* nav */
+nav {
+    grid-area: nav;
+    text-align: center;
+    background-color: gray;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav ul li {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav ul li a {
+
+    color: rebeccapurple;
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+    ;
+}
+
+nav ul li a:hover {
+
+    background-color: #fff;
+    color: red;
+    text-decoration: none;
+    ;
+}
+
+aside img {
+
+    margin-right: 1rem;
+    ;
+    border: black .5em solid;
+
+}
+
+main img {
+    border-radius: 100% 100% 40% 40%;
+    margin-right: 1rem;
+    ;
+    border: black .5em solid;
+}
+
+/* CSS Grid Layout */
+#container {
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'nav nav nav nav'
+        'sidebar sidebar content content'
+        'footer footer footer footer';
+    margin: 0;
+}
+
+header {
+
+    grid-area: header;
+    background: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+aside {
+    grid-area: sidebar;
+    background: lightgray;
+    padding: 20px;
+}
+
+main {
+    grid-area: content;
+    background: lightgray;
+    padding: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

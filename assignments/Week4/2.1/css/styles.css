@@ -1,0 +1,53 @@
+.banner{
+    width: 100%;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline;
+}
+/* All of the class colors are listed below and colored white and background is colored with the 5 colors */
+.steelblue{
+background-color: #6382BF;
+color: white;
+padding: 16px;
+}
+.grayishblue{
+background-color: #C7D1D9;
+color: white;
+padding: 16px;
+}
+.bluetinge{
+background-color: #0D1F26;
+color: white;
+padding: 16px;
+}
+.charcoalblue{
+background-color: #1A3540;
+color: white;
+padding: 16px;
+}
+.tealblue{
+    background-color: #5697A6;
+    color: white;
+    padding: 16px;
+}
+section{
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;}
+header a {
+    text-decoration: none;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
