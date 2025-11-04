@@ -1,0 +1,137 @@
+/* Halloween Theme Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1a0b2e;
+    color: #f0e6d2;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(135deg, #2d1b4e, #1a0b2e);
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid #ff6b35;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+header h1 {
+    font-size: 2.5rem;
+    color: #ff6b35;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #b8a896;
+    font-style: italic;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+
+.gallery {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-item {
+    background-color: #2d1b4e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hov {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(255, 107, 53, 0.4);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item h3 {
+    padding: 1rem 1rem 0.5rem;
+    color: #ff6b35;
+    font-size: 1.3rem;
+}
+
+.gallery-item p {
+    padding: 0 1rem 1rem;
+    color: #b8a896;
+    font-size: 0.95rem;
+}
+
+.info-section {
+    background-color: #2d1b4e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.info-section h2 {
+    color: #ff6b35;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.info-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* BUG 4: Wrong color format - missing # for hex color */
+#spooky-button {
+    background-color: ff6b35;
+    color: #1a0b2e;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+#spooky-button:hover {
+    background-color: #ff8555;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 107, 53, 0.5);
+}
+
+footer {
+    background-color: #0d0520;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    border-top: 3px solid #ff6b35;
+}
+
+footer p {
+    font-siz: 0.9rem;
+    color: #b8a896;
+    margin: 0.3rem 0;
+}
+
+footer p:first-child {
+    font-weight: bold;
+}
