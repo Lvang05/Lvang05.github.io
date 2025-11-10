@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Turkey Trot 5K Race</title>
+    <link rel="stylesheet" href="styles-buggy.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">🦃 Turkey Trot</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Annual Turkey Trot 5K</h1>
+            <p>Run off those calories before the feast!</p>
+            <p class="date">Thanksgiving Day | November 28, 2025 | 8:00 AM</p>
+            <button class="cta-button">Register Now</button>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Why Join Our Turkey Trot?</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <div class="icon">🏃</div>
+                    <h3>Fun for All Ages</h3>
+                    <p>Whether you run, jog, or walk, everyone is welcome!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎽</div>
+                    <h3>Free T-Shirt</h3>
+                    <p>Every participant receives a commemorative race shirt.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🥧</div>
+                    <h3>Post-Race Treats</h3>
+                    <p>Enjoy refreshments and pie at the finish line!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="register-section">
+        <div class="container">
+            <h2>Register for the Race</h2>
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <!-- BUG #5: Missing for attribute on label -->
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age Group:</label>
+                    <select id="age" name="age">
+                        <option value="under18">Under 18</option>
+                        <option value="18-35">18-35</option>
+                        <option value="36-50">36-50</option>
+                        <option value="over50">Over 50</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="shirt-size">T-Shirt Size:</label>
+                    <select id="shirt-size" name="shirt-size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="xlarge">X-Large</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Complete Registration</button>
+            </form>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quo deleniti ad ut delectus aut impedit vitae
+            cupiditate perferendis corporis quasi, aperiam et neque necessitatibus voluptas voluptatibus distinctio
+            illo. Natus quibusdam sunt esse ullam ea distinctio temporibus ipsam dicta mollitia nam. Omnis blanditiis
+            mollitia voluptatum laborum tempore nostrum voluptates sequi quod, nulla, maiores atque iure? Porro quo
+            nostrum beatae consectetur aperiam expedita! Doloribus, et fuga amet saepe at earum ducimus consectetur,
+            molestias modi facere animi totam natus temporibus iure explicabo eius nostrum quibusdam recusandae
+            exercitationem ab qui nemo! Eum cumque explicabo, vero quibusdam ipsa consequatur blanditiis tempora omnis
+            eligendi praesentium suscipit nisi distinctio nobis laudantium ea ipsum adipisci iusto magnam odit
+            reprehenderit. Sit nisi, similique corporis est odit neque? Eius voluptate quisquam repellat magni in quasi
+            eveniet, sunt suscipit modi ea, facere ut laudantium consectetur? Nostrum enim ex eum sit. Magnam nisi eaque
+            velit deserunt error, ad commodi alias veritatis fuga unde blanditiis facilis. Nostrum eligendi nisi maxime
+            eos labore deserunt? Rem molestias dignissimos facilis in voluptate accusantium cupiditate ad eum modi earum
+            est harum omnis obcaecati, veniam possimus tempore eveniet nostrum doloribus debitis doloremque. Commodi
+            fuga harum fugit necessitatibus non a, sit dignissimos possimus nobis, consectetur ducimus sunt ipsam.
+        </p>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Turkey Trot 5K. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
