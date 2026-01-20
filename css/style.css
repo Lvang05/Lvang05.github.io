@@ -36,7 +36,7 @@ header {
 .profile-container h1,
 .profile-container p {
     color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .profile-image {
@@ -44,8 +44,8 @@ header {
     height: 250px;
     border-radius: 50%;
     object-fit: cover;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2),
-                0 0 0 10px rgba(255,255,255,0.5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+        0 0 0 10px rgba(255, 255, 255, 0.5);
     transition: transform 0.3s ease;
 }
 
@@ -57,7 +57,7 @@ header {
 nav {
     background-color: white;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -90,10 +90,12 @@ main {
     padding: 2rem;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
@@ -130,15 +132,7 @@ h1, h2, h3 {
 
 .work-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* Assignments Lists */
-.assignments ul,
-.assignments ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
