@@ -17,3 +17,6 @@ if (isMorning) {
 } else {
     h1.textContent = "Good Evening!";
 }
+
+const key = "It's a secret to everybody."
+localStorage.setItem(key, 'Hello, how are you doing today?')
