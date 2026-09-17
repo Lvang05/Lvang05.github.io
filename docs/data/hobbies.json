@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Watching Football",
+        "category": "Sports",
+        "rating": 0
+    },
+    {
+        "id": 2,
+        "name": "Playing Pickleball",
+        "category": "Sports",
+        "rating": 0
+    },
+    {
+        "id": 3,
+        "name": "Playing Video Games",
+        "category": "Gaming",
+        "rating": 0
+    },
+    {
+        "id": 4,
+        "name": "Playing Golf",
+        "category": "Sports",
+        "rating": 0
+    },
+    {
+        "id": 5,
+        "name": "Working Out",
+        "category": "Lifestyle",
+        "rating": 0
+    }
+]
