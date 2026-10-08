@@ -1,6 +1,6 @@
-const Nav = () => {
+const Nav = ({ theme }) => {
     return (
-        <nav>
+        <nav className={theme === 'dark' ? 'nav dark' : 'nav light'}>
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">About</a></li>
