@@ -1,31 +1,33 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useContext } from 'react'
+import { ThemeContext } from '../contexts/ThemeContext'
 
-const ThemeToggle = ({ theme, onToggleTheme }) => {
-    const buttonRef = useRef(null)
-    const isFirstRender = useRef(true)
+const ThemeToggle = () => {
+  const { theme, onToggleTheme } = useContext(ThemeContext)
+  const buttonRef = useRef(null)
+  const isFirstRender = useRef(true)
 
-    useEffect(() => {
-        if (isFirstRender.current) {
-            isFirstRender.current = false
-            return
-        }
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+      return
+    }
 
-        buttonRef.current.focus()
-    }, [theme])
+    buttonRef.current.focus()
+  }, [theme])
 
-    const label = theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'
-    const current = theme === 'light' ? 'Light Mode' : 'Dark Mode'
+  const label = theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'
+  const current = theme === 'light' ? 'Light Mode' : 'Dark Mode'
 
-    return (
-        <button
-            ref={buttonRef}
-            className="theme-toggle"
-            onClick={onToggleTheme}
-            aria-label={label}
-        >
-            {theme === 'light' ? '🌙' : '☀️'} {current}
-        </button>
-    )
+  return (
+    <button
+      ref={buttonRef}
+      className="theme-toggle"
+      onClick={onToggleTheme}
+      aria-label={label}
+    >
+      {theme === 'light' ? '🌙' : '☀️'} {current}
+    </button>
+  )
 }
 
 export default ThemeToggle
